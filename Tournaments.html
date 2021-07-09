@@ -1,0 +1,658 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <title>Hello, world!</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <link href="assets/css/card.css" rel="stylesheet" />
+        <link href="assets/lib/fontawesome-free-5.15.3-web/css/all.min.css" rel="stylesheet" />
+        <!--     Fonts and icons     -->
+        <link rel="stylesheet" type="text/css"
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+        <!-- Material Kit CSS -->
+        <link href="Inside/assets/css/material-dashboard.css?v=1.0.1" rel="stylesheet" />
+       
+    </head>
+
+    <body class="dark-edition">
+        <div class="wrapper" style="padding: 0px;">
+            <div class="sidebar" data-color="purple" data-background-color="default"
+                data-image="Inside/assets/img/sidebar-1.jpg">
+                <!--
+      Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+  
+      Tip 2: you can also add an image using data-image tag
+    -->
+                <div class="logo"><a href="http://www.creative-tim.com" class="simple-text logo-normal text-center">
+                       <img src="assets/images/RGI_Logo.svg" alt="logo" style="max-height: 30px;" />
+                    </a>
+                </div>
+                <div class="sidebar-wrapper">
+                    <div class="user">
+                        <div class="photo">
+                            <img src="Inside/assets/img/faces/avatar.jpg" />
+                        </div>
+                        <div class="user-info">
+                            <a data-toggle="collapse" href="#collapseExample" class="username">
+                                <span>
+                                    Tania Andrew
+                                    <b class="caret"></b>
+                                </span>
+                            </a>
+                            <div class="collapse" id="collapseExample">
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span class="sidebar-mini"> MP </span>
+                                            <span class="sidebar-normal"> My Profile </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span class="sidebar-mini"> EP </span>
+                                            <span class="sidebar-normal"> Edit Profile </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span class="sidebar-mini"> S </span>
+                                            <span class="sidebar-normal"> Settings </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="nav">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="Dashboard.html">
+                                <i class="material-icons">dashboard</i>
+                                <p> Home </p>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="Tournaments.html">
+                                <i class="material-icons">widgets</i>
+                                <p> Browse Tournaments </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-panel">
+                <!-- Navbar -->
+                <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+                    <div class="container-fluid">
+                        <div class="navbar-wrapper">
+                            <a class="navbar-brand" href="javascript:;">Dashboard</a>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="navbar-toggler-icon icon-bar"></span>
+                            <span class="navbar-toggler-icon icon-bar"></span>
+                            <span class="navbar-toggler-icon icon-bar"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="javascript:;">
+                                        <i class="material-icons">notifications</i> Notifications
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="javascript:;" id="navbarDropdownProfile"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">person</i>
+                                        <p class="d-lg-none d-md-block">
+                                            Account
+                                        </p>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right"
+                                        aria-labelledby="navbarDropdownProfile">
+                                        <a class="dropdown-item" href="#">Profile</a>
+                                        <a class="dropdown-item" href="#">Settings</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="index.html">Log out</a>
+                                    </div>
+                                </li>
+                                <!-- your navbar here -->
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- End Navbar -->
+                <div class="content">
+                      <h2 class="display-3 text-white text-uppercase">Feature tournments</h2>
+                    <div class="container">
+                        <!-- your content here -->
+                        <div class="row">
+                            <div class="col-4 py-5">
+                                <div class="clash-card barbarian">
+                                    <div class="clash-card__image clash-card__image--barbarian">
+                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png"
+                                            alt="barbarian" />
+                                    </div>
+
+                                    <div class="clash-card__unit-name">The Barbarian</div>
+                                    <div class="clash-card__unit-description">
+                                        <i class="far fa-calendar"></i> <span>Sat, Jul 10th</span>
+                                        <span> - </span>
+                                        <i class="far fa-clock"></i> <span>3:00 AM +03</span>
+                                    </div>
+
+                                    <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+                                        <div class="one-third">
+                                            <div class="stat">Feature</div>
+                                        </div>
+
+                                        <div class="one-third">
+                                            <div class="stat">16</div>
+                                            <div class="stat-value">Available</div>
+                                        </div>
+
+                                        <a href="#">
+                                            <div class="one-third no-border">
+                                                <h3 class="text-white">Join <i class="fas fa-chevron-right"></i></h3>
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+                                </div> <!-- end clash-card barbarian-->
+                            </div> <!-- end wrapper -->
+
+                            <div class="col-4 py-5">
+                                <div class="clash-card archer">
+                                    <div class="clash-card__image clash-card__image--archer">
+                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/archer.png"
+                                            alt="archer" />
+                                    </div>
+
+                                    <div class="clash-card__unit-name">The Archer</div>
+                                    <div class="clash-card__unit-description">
+                                        <i class="far fa-calendar"></i> <span>Sat, Jul 10th</span>
+                                        <span> - </span>
+                                        <i class="far fa-clock"></i> <span>3:00 AM +03</span>
+                                    </div>
+
+                                    <div class="clash-card__unit-stats clash-card__unit-stats--archer clearfix">
+                                        <div class="one-third">
+                                            <div class="stat">Feature</div>
+                                        </div>
+
+                                        <div class="one-third">
+                                            <div class="stat">24</div>
+                                            <div class="stat-value">Available</div>
+                                        </div>
+
+                                        <a href="#">
+                                            <div class="one-third no-border">
+                                                <h3 class="text-white">Join <i
+                                                        class="fas fa-chevron-right"></i></h3>
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+                                </div> <!-- end clash-card archer-->
+                            </div> <!-- end wrapper -->
+
+                            <div class="col-4 py-5">
+                                <div class="clash-card giant">
+                                    <div class="clash-card__image clash-card__image--giant">
+                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/giant.png"
+                                            alt="giant" />
+                                    </div>
+
+                                    <div class="clash-card__unit-name">The Giant</div>
+                                    <div class="clash-card__unit-description">
+                                        <i class="far fa-calendar"></i> <span>Sat, Jul 10th</span>
+                                        <span> - </span>
+                                        <i class="far fa-clock"></i> <span>3:00 AM +03</span>
+                                    </div>
+
+                                    <div class="clash-card__unit-stats clash-card__unit-stats--giant clearfix">
+                                        <div class="one-third">
+                                            <div class="stat">Open</div>
+                                        </div>
+
+                                        <div class="one-third">
+                                            <div class="stat">12</div>
+                                            <div class="stat-value">Available</div>
+                                        </div>
+
+                                        <a href="#">
+                                            <div class="one-third no-border">
+                                                <h3 class="text-white">Join <i
+                                                        class="fas fa-chevron-right"></i></h3>
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+                                </div> <!-- end clash-card giant-->
+                            </div> <!-- end wrapper -->
+
+                            <div class="col-4 py-5">
+                                <div class="clash-card goblin">
+                                    <div class="clash-card__image clash-card__image--goblin">
+                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/goblin.png"
+                                            alt="goblin" />
+                                    </div>
+
+                                    <div class="clash-card__unit-name">The Goblin</div>
+                                    <div class="clash-card__unit-description">
+                                        <i class="far fa-calendar"></i> <span>Sat, Jul 10th</span>
+                                        <span> - </span>
+                                        <i class="far fa-clock"></i> <span>3:00 AM +03</span>
+                                    </div>
+
+                                    <div class="clash-card__unit-stats clash-card__unit-stats--goblin clearfix">
+                                        <div class="one-third">
+                                            <div class="stat">Feature</div>
+                                        </div>
+
+                                        <div class="one-third">
+                                            <div class="stat">32</div>
+                                            <div class="stat-value">Available</div>
+                                        </div>
+
+                                        <a href="#">
+                                            <div class="one-third no-border">
+                                                <h3 class="text-white">Join <i
+                                                        class="fas fa-chevron-right"></i></h3>
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+                                </div> <!-- end clash-card goblin-->
+                            </div> <!-- end wrapper -->
+
+                            <div class="col-4 py-5">
+                                <div class="clash-card wizard">
+                                    <div class="clash-card__image clash-card__image--wizard">
+                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/wizard.png"
+                                            alt="wizard" />
+                                    </div>
+
+                                    <div class="clash-card__unit-name">The Wizard</div>
+                                    <div class="clash-card__unit-description">
+                                        <i class="far fa-calendar"></i> <span>Sat, Jul 10th</span>
+                                        <span> - </span>
+                                        <i class="far fa-clock"></i> <span>3:00 AM +03</span>
+                                    </div>
+
+                                    <div class="clash-card__unit-stats clash-card__unit-stats--wizard clearfix">
+                                        <div class="one-third">
+                                            <div class="stat">Open</div>
+                                        </div>
+
+                                        <div class="one-third">
+                                            <div class="stat">16</div>
+                                            <div class="stat-value">Available</div>
+                                        </div>
+
+                                        <a href="#">
+                                            <div class="one-third no-border">
+                                                <h3 class="text-white">Join <i
+                                                        class="fas fa-chevron-right"></i></h3>
+                                            </div>
+                                        </a>
+                                    </div>
+
+
+                                </div> <!-- end clash-card wizard-->
+                            </div> <!-- end wrapper -->
+
+
+
+                            <div class="col-4 py-5">
+                                <div class="clash-card giant">
+                                    <div class="clash-card__image clash-card__image--giant">
+                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/giant.png"
+                                            alt="giant" />
+                                    </div>
+
+                                    <div class="clash-card__unit-name">The Giant</div>
+                                    <div class="clash-card__unit-description">
+                                        <i class="far fa-calendar"></i> <span>Sat, Jul 10th</span>
+                                        <span> - </span>
+                                        <i class="far fa-clock"></i> <span>3:00 AM +03</span>
+                                    </div>
+
+                                    <div class="clash-card__unit-stats clash-card__unit-stats--giant clearfix">
+                                        <div class="one-third">
+                                            <div class="stat">2<sup>M</sup></div>
+                                            <div class="stat-value">Date</div>
+                                        </div>
+
+                                        <div class="one-third">
+                                            <div class="stat">12</div>
+                                            <div class="stat-value">Available</div>
+                                        </div>
+
+                                        <a href="#">
+                                            <div class="one-third no-border">
+                                                <h3 class="text-white">Join <i
+                                                        class="fas fa-chevron-right"></i></h3>
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+                                </div> <!-- end clash-card giant-->
+                            </div> <!-- end wrapper -->
+
+                            <div class="col-4 py-5">
+                                <div class="clash-card goblin">
+                                    <div class="clash-card__image clash-card__image--goblin">
+                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/goblin.png"
+                                            alt="goblin" />
+                                    </div>
+
+                                    <div class="clash-card__unit-name">The Goblin</div>
+                                    <div class="clash-card__unit-description">
+                                        <i class="far fa-calendar"></i> <span>Sat, Jul 10th</span>
+                                        <span> - </span>
+                                        <i class="far fa-clock"></i> <span>3:00 AM +03</span>
+                                    </div>
+
+                                    <div class="clash-card__unit-stats clash-card__unit-stats--goblin clearfix">
+                                        <div class="one-third">
+                                            <div class="stat">30<sup>S</sup></div>
+                                            <div class="stat-value">Date</div>
+                                        </div>
+
+                                        <div class="one-third">
+                                            <div class="stat">32</div>
+                                            <div class="stat-value">Available</div>
+                                        </div>
+
+                                        <a href="#">
+                                            <div class="one-third no-border">
+                                                <h3 class="text-white">Join <i
+                                                        class="fas fa-chevron-right"></i></h3>
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+                                </div> <!-- end clash-card goblin-->
+                            </div> <!-- end wrapper -->
+
+                        </div> <!-- end row -->
+
+                    </div>
+                </div>
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <nav class="float-left">
+                            <ul>
+                                <li>
+                                    <a href="https://www.creative-tim.com">
+                                        Creative Tim
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="copyright float-right">
+                            &copy;
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script>, made with <i class="material-icons">favorite</i> by
+                            <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> for a better web.
+                        </div>
+                        <!-- your footer here -->
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <!--   Core JS Files   -->
+        <script src="Inside/assets/js/core/jquery.min.js"></script>
+        <script src="Inside/assets/js/core/popper.min.js"></script>
+        <script src="Inside/assets/js/core/bootstrap-material-design.min.js"></script>
+        <script src="Inside/assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+        <!-- Plugin for the momentJs  -->
+        <script src="Inside/assets/js/plugins/moment.min.js"></script>
+        <!--  Plugin for Sweet Alert -->
+        <script src="Inside/assets/js/plugins/sweetalert2.js"></script>
+        <!-- Forms Validations Plugin -->
+        <script src="Inside/assets/js/plugins/jquery.validate.min.js"></script>
+        <!-- Plugin for the Wizard, full documentation here: https://github.com/VinceG/twitter-bootstrap-wizard -->
+        <script src="Inside/assets/js/plugins/jquery.bootstrap-wizard.js"></script>
+        <!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
+        <script src="Inside/assets/js/plugins/bootstrap-selectpicker.js"></script>
+        <!--  Plugin for the DateTimePicker, full documentation here: https://eonasdan.github.io/bootstrap-datetimepicker/ -->
+        <script src="Inside/assets/js/plugins/bootstrap-datetimepicker.min.js"></script>
+        <!--  DataTables.net Plugin, full documentation here: https://datatables.net/  -->
+        <script src="Inside/assets/js/plugins/jquery.dataTables.min.js"></script>
+        <!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
+        <script src="Inside/assets/js/plugins/bootstrap-tagsinput.js"></script>
+        <!-- Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+        <script src="Inside/assets/js/plugins/jasny-bootstrap.min.js"></script>
+        <!--  Full Calendar Plugin, full documentation here: https://github.com/fullcalendar/fullcalendar    -->
+        <script src="Inside/assets/js/plugins/fullcalendar/fullcalendar.min.js"></script>
+        <script src="Inside/assets/js/plugins/fullcalendar/daygrid.min.js"></script>
+        <script src="Inside/assets/js/plugins/fullcalendar/timegrid.min.js"></script>
+        <script src="Inside/assets/js/plugins/fullcalendar/list.min.js"></script>
+        <script src="Inside/assets/js/plugins/fullcalendar/interaction.min.js"></script>
+        <!-- Vector Map plugin, full documentation here: http://jvectormap.com/documentation/ -->
+        <script src="Inside/assets/js/plugins/jquery-jvectormap.js"></script>
+        <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+        <script src="Inside/assets/js/plugins/nouislider.min.js"></script>
+        <!-- Include a polyfill for ES6 Promises (optional) for IE11, UC Browser and Android browser support SweetAlert -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+        <!-- Library for adding dinamically elements -->
+        <script src="Inside/assets/js/plugins/arrive.min.js"></script>
+        <!--  Google Maps Plugin    -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+        <!-- Chartist JS -->
+        <script src="Inside/assets/js/plugins/chartist.min.js"></script>
+        <!--  Notifications Plugin    -->
+        <script src="Inside/assets/js/plugins/bootstrap-notify.js"></script>
+        <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+        <script src="Inside/assets/js/material-dashboard.js?v=1.0.1" type="text/javascript"></script>
+        <!-- Material Dashboard DEMO methods, don't include it in your project! -->
+        <script src="Inside/assets/demo/demo.js"></script>
+        <script>
+            $(document).ready(function () {
+                $().ready(function () {
+                    $sidebar = $('.sidebar');
+
+                    $sidebar_img_container = $sidebar.find('.sidebar-background');
+
+                    $full_page = $('.full-page');
+
+                    $sidebar_responsive = $('body > .navbar-collapse');
+
+                    window_width = $(window).width();
+
+                    fixed_plugin_open = $('.sidebar .sidebar-wrapper .nav li.active a p').html();
+
+                    if (window_width > 767 && fixed_plugin_open == 'Dashboard') {
+                        if ($('.fixed-plugin .dropdown').hasClass('show-dropdown')) {
+                            $('.fixed-plugin .dropdown').addClass('open');
+                        }
+
+                    }
+
+                    $('.fixed-plugin a').click(function (event) {
+                        // Alex if we click on switch, stop propagation of the event, so the dropdown will not be hide, otherwise we set the  section active
+                        if ($(this).hasClass('switch-trigger')) {
+                            if (event.stopPropagation) {
+                                event.stopPropagation();
+                            } else if (window.event) {
+                                window.event.cancelBubble = true;
+                            }
+                        }
+                    });
+
+                    $('.fixed-plugin .active-color span').click(function () {
+                        $full_page_background = $('.full-page-background');
+
+                        $(this).siblings().removeClass('active');
+                        $(this).addClass('active');
+
+                        var new_color = $(this).data('color');
+
+                        if ($sidebar.length != 0) {
+                            $sidebar.attr('data-color', new_color);
+                        }
+
+                        if ($full_page.length != 0) {
+                            $full_page.attr('filter-color', new_color);
+                        }
+
+                        if ($sidebar_responsive.length != 0) {
+                            $sidebar_responsive.attr('data-color', new_color);
+                        }
+                    });
+
+                    $('.fixed-plugin .background-color .badge').click(function () {
+                        $(this).siblings().removeClass('active');
+                        $(this).addClass('active');
+
+                        var new_color = $(this).data('background-color');
+
+                        if ($sidebar.length != 0) {
+                            $sidebar.attr('data-background-color', new_color);
+                        }
+                    });
+
+                    $('.fixed-plugin .img-holder').click(function () {
+                        $full_page_background = $('.full-page-background');
+
+                        $(this).parent('li').siblings().removeClass('active');
+                        $(this).parent('li').addClass('active');
+
+
+                        var new_image = $(this).find("img").attr('src');
+
+                        if ($sidebar_img_container.length != 0 && $('.switch-sidebar-image input:checked').length != 0) {
+                            $sidebar_img_container.fadeOut('fast', function () {
+                                $sidebar_img_container.css('background-image', 'url("' + new_image + '")');
+                                $sidebar_img_container.fadeIn('fast');
+                            });
+                        }
+
+                        if ($full_page_background.length != 0 && $('.switch-sidebar-image input:checked').length != 0) {
+                            var new_image_full_page = $('.fixed-plugin li.active .img-holder').find('img').data('src');
+
+                            $full_page_background.fadeOut('fast', function () {
+                                $full_page_background.css('background-image', 'url("' + new_image_full_page + '")');
+                                $full_page_background.fadeIn('fast');
+                            });
+                        }
+
+                        if ($('.switch-sidebar-image input:checked').length == 0) {
+                            var new_image = $('.fixed-plugin li.active .img-holder').find("img").attr('src');
+                            var new_image_full_page = $('.fixed-plugin li.active .img-holder').find('img').data('src');
+
+                            $sidebar_img_container.css('background-image', 'url("' + new_image + '")');
+                            $full_page_background.css('background-image', 'url("' + new_image_full_page + '")');
+                        }
+
+                        if ($sidebar_responsive.length != 0) {
+                            $sidebar_responsive.css('background-image', 'url("' + new_image + '")');
+                        }
+                    });
+
+                    $('.switch-sidebar-image input').change(function () {
+                        $full_page_background = $('.full-page-background');
+
+                        $input = $(this);
+
+                        if ($input.is(':checked')) {
+                            if ($sidebar_img_container.length != 0) {
+                                $sidebar_img_container.fadeIn('fast');
+                                $sidebar.attr('data-image', '#');
+                            }
+
+                            if ($full_page_background.length != 0) {
+                                $full_page_background.fadeIn('fast');
+                                $full_page.attr('data-image', '#');
+                            }
+
+                            background_image = true;
+                        } else {
+                            if ($sidebar_img_container.length != 0) {
+                                $sidebar.removeAttr('data-image');
+                                $sidebar_img_container.fadeOut('fast');
+                            }
+
+                            if ($full_page_background.length != 0) {
+                                $full_page.removeAttr('data-image', '#');
+                                $full_page_background.fadeOut('fast');
+                            }
+
+                            background_image = false;
+                        }
+                    });
+
+                    $('.switch-sidebar-mini input').change(function () {
+                        $body = $('body');
+
+                        $input = $(this);
+
+                        if (md.misc.sidebar_mini_active == true) {
+                            $('body').removeClass('sidebar-mini');
+                            md.misc.sidebar_mini_active = false;
+
+                            // if we are on windows OS we activate the perfectScrollbar function
+                            if ($(".sidebar").length != 0) {
+                                var ps = new PerfectScrollbar('.sidebar');
+                            }
+                            if ($(".sidebar-wrapper").length != 0) {
+                                var ps1 = new PerfectScrollbar('.sidebar-wrapper');
+                            }
+                            if ($(".main-panel").length != 0) {
+                                var ps2 = new PerfectScrollbar('.main-panel');
+                            }
+                            if ($(".main").length != 0) {
+                                var ps3 = new PerfectScrollbar('main');
+                            }
+                            $('html').addClass('perfect-scrollbar-on');
+
+                        } else {
+                            $('html').addClass('perfect-scrollbar-off');
+
+                            setTimeout(function () {
+                                $('body').addClass('sidebar-mini');
+
+                                md.misc.sidebar_mini_active = true;
+                            }, 300);
+                        }
+
+                        // we simulate the window Resize so the charts will get updated in realtime.
+                        var simulateWindowResize = setInterval(function () {
+                            window.dispatchEvent(new Event('resize'));
+                        }, 180);
+
+                        // we stop the simulation of Window Resize after the animations are completed
+                        setTimeout(function () {
+                            clearInterval(simulateWindowResize);
+                        }, 1000);
+
+                    });
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function () {
+                // Javascript method's body can be found in assets/js/demos.js
+                md.initDashboardPageCharts();
+
+                md.initVectorMap();
+
+            });
+        </script>
+    </body>
+
+</html>
